@@ -5,7 +5,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/apognu/gocal"
+	"github.com/bakerag1/gocal"
 )
 
 const ics = `
