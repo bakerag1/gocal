@@ -12,7 +12,7 @@ Event are parsed between two given dates (`Gocal.Start` and `Gocal.End`, 3 month
 package main
 
 import (
-  "github.com/apognu/gocal"
+  "github.com/bakerag1/gocal"
 )
 
 func main() {

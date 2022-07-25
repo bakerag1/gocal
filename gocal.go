@@ -8,7 +8,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/apognu/gocal/parser"
+	"github.com/bakerag1/gocal/parser"
 )
 
 func NewParser(r io.Reader) *Gocal {
