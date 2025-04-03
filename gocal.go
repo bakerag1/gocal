@@ -338,6 +338,8 @@ func (gc *Gocal) parseEvent(l *Line) error {
 		gc.buffer.Comment = l.Value
 	case "CLASS":
 		gc.buffer.Class = l.Value
+	case "PARTSTAT":
+		gc.buffer.PartStat = l.Value
 	default:
 		key := strings.ToUpper(l.Key)
 		if strings.HasPrefix(key, "X-") {

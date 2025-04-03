@@ -1,4 +1,4 @@
-module github.com/apognu/gocal
+module github.com/bakerag1/gocal
 
 go 1.13
 

@@ -27,6 +27,7 @@ ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=John
 LOCATION:My Place
 COMMENT;LANGUAGE=en-US:I don't think so.
 CLASS: PRIVATE
+PARTSTAT:TENTATIVE
 SEQUENCE:0
 STATUS:CONFIRMED
 SUMMARY:Lorem Ipsum Dolor Sit Amet
@@ -61,6 +62,7 @@ func Test_Parse(t *testing.T) {
 	assert.Equal(t, "COUNTER", gc.Method)
 	assert.Equal(t, "Lorem Ipsum Dolor Sit Amet", gc.Events[0].Summary)
 	assert.Equal(t, "PRIVATE", gc.Events[0].Class)
+	assert.Equal(t, "TENTATIVE", gc.Events[0].PartStat)
 	assert.Equal(t, "0001@example.net", gc.Events[0].Uid)
 	assert.Equal(t, "Amazing description on two lines", gc.Events[0].Description)
 	assert.Equal(t, 2, len(gc.Events[0].Attendees))

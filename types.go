@@ -123,6 +123,7 @@ type Event struct {
 	Valid            bool
 	Comment          string
 	Class            string
+	PartStat         string
 }
 
 type Geo struct {
